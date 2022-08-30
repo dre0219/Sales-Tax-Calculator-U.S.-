@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<!-- References -->
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+<body> <!-- Bio -->
+    <div id="content">
+        <h1>Sales Tax Calculator</h1>
+        <p>Enter the values below and click "Calculate".</p>
+        <div id="taxCalc">
+            <label for="subtotal">Subtotal:</label>
+            <input type="text" id="subtotal" /><br />
+            <br />
+
+            <!-- taxRate in an individual text rather than dropdown menu-->
+           <!-- <label for="taxRate">Tax Rate:</label>
+            <input type="text" id="taxRate" /> &nbsp;&nbsp;%<br />  -->
+
+
+            <!-- Based off the 2022 rates in the United States -->
+            <label for="taxRate">State Tax %: </label>
+            <select name="taxRate" id="taxRate">
+              <option> Choose State </option></option> <!-- The dropdown menu given by the "option" -->
+              <option value="4.00">Alabama</option>
+              <option value="0.00">Alaska</option>
+              <option value="5.60">Arizona</option>
+              <option value="6.50">Arkansas</option>
+              <option value="7.25">California</option>
+              <option value="2.90">Colorado</option>
+              <option value="6.35">Connecticut</option>
+              <option value="0.00">Delaware</option>
+              <option value="6.00">D.C.</option>
+              <option value="6.00">Florida</option>
+              <option value="4.00">Georgia</option>
+              <option value="4.00">Hawaii</option>
+              <option value="6.00">Idaho</option>
+              <option value="6.25">Illinois</option>
+              <option value="7.00">Indiana</option>
+              <option value="6.00">Iowa</option>
+              <option value="6.50">Kansas</option>
+              <option value="6.00">Kentucky</option>
+              <option value="4.45">Louisiana</option>
+              <option value="5.50">Maine</option>
+              <option value="6.00">Maryland</option>
+              <option value="6.25">Massachusetts</option>
+              <option value="6.00">Michigan</option>
+              <option value="6.875">Minnesota</option>
+              <option value="7.00">Mississippi</option>
+              <option value="4.225">Missouri</option>
+              <option value="0.00">Montana</option>
+              <option value="5.50">Nebraska</option>
+              <option value="6.85">Nevada</option>
+              <option value="0.00">New Hampshire</option>
+              <option value="6.625">New Jersey</option>
+              <option value="5.125">New Mexico</option>
+              <option value="4.00">New York</option>
+              <option value="4.75">North Carolina</option>
+              <option value="5.00">North Dakota</option>
+              <option value="5.75">Ohio</option>
+              <option value="4.50">Oklahoma</option>
+              <option value="0.00">Oregon</option>
+              <option value="6.00">Pennsylvania</option>
+              <option value="7.00">Rhode Island</option>
+              <option value="6.00">South Carolina</option>
+              <option value="4.50">South Dakota </option>
+              <option value="7.00">Tennessee</option>
+              <option value="6.25">Texas</option>
+              <option value="6.10">Utah</option>
+              <option value="6.00">Vermont</option>
+              <option value="5.30">Virginia</option>
+              <option value="6.50">Washington</option>
+              <option value="6.00">West Virginia</option>
+              <option value="5.00">Wisconsin</option>
+              <option value="4.00">Wyoming</option>
+            </select>
+            <br />
+            <br /> <!-- For spacing -->
+
+            <label for="salesTax">Sales Tax:</label> <!-- The Sales tax in total area -->
+            <input type="text" id="salesTax" disabled="disabled" /><br />
+            <br />
+
+            <label for="total">Total:</label> <!-- The total cost area -->
+            <input type="text" id="total" disabled="disabled" /><br />
+            <br />
+
+            <label>&nbsp;</label> <!-- The buttons-->
+            <input type="button" id="calculate" value="Calculate" /><br />
+        </div>
+    </div>
+</body>
+</html>
